@@ -70,8 +70,6 @@ public class TampilMahasiswaActivity extends AppCompatActivity
                 public void onClick(View view) {
                     Intent intent = new Intent(getApplicationContext(), TambahMahasiswaActivity.class);
                     startActivity(intent);
-
-                    loadRecyclerView();
                 }
             });
         }
