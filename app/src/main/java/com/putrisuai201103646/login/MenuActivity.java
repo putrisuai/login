@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
-    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitButton, _tampilTabLayoutButton;
-    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent;
+    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitButton, _tampilTabLayoutButton, _tampilHotelButton, _tampilWebLanjutanButton;
+    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent, _tampilHotelIntent, _tampilWebLanjutanIntent;
 
 
     @Override
@@ -22,6 +22,8 @@ public class MenuActivity extends AppCompatActivity {
         initTampilCuacaButton();
         initTampilImplicitButton();
         initTampilTabLayoutButton();
+        initTampilHotelButton();
+        initTampilWebLanjutanButton();
 
         Bundle bundle = getIntent().getExtras();
         String activityTitle = bundle.getString("username");
@@ -85,6 +87,30 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 _tampilTabLayoutIntent = new Intent(getApplicationContext(), TabLayoutMainActivity.class);
                 startActivity(_tampilTabLayoutIntent);
+            }
+        });
+    }
+
+    private void initTampilHotelButton() {
+        _tampilHotelButton = findViewById(R.id.tampilHotelButton);
+
+        _tampilHotelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                _tampilHotelIntent = new Intent(getApplicationContext(), HotelAppMainActivity.class);
+                startActivity(_tampilHotelIntent);
+            }
+        });
+    }
+
+    private void initTampilWebLanjutanButton() {
+        _tampilWebLanjutanButton = findViewById(R.id.tampilWebLanjutanButton);
+
+        _tampilWebLanjutanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                _tampilWebLanjutanIntent = new Intent(getApplicationContext(), WebLanjutanMainActivity.class);
+                startActivity(_tampilWebLanjutanIntent);
             }
         });
     }

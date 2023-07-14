@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HotelAppMainActivity"
+    android:background="@drawable/gradient_a">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:background="#829ccc"
+            android:scaleType="centerCrop">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="#a00"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$74"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per Night"
+                android:textSize="13sp"
+                android:textColor="#fff">
+            </TextView>
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Beach is but a Short Walk Away"
+                android:textSize="24dp"
+                android:gravity="center"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="The beach appears to be live and joyful with the presence of the natural vegetation. There are evergreen plantations both along and inside the beach. Images of buoyant sea weeds can be seen along the shore. Palms trees are seen to stand tall along the beach dancing to the tune of the breeze emanating from the waters of the sea.
+
+The sea grapes and the sea oats are also observed gathered in clusters in the sea next to the shore. There colored flowers are splendid and brightens at the shining of the summer sun. The sweet scent of the flower grapes sends a signal to the world about the hope brought by nature.
+
+The atmosphere is fully intensified by the aroma produced by the buoyant sea flowers. In addition, from a far, images of leafless trees are also observed. The perfect combination of the vegetation along the beach and inside the sea displays the beauty of nature to the highest peak.
+
+It mesmerizes the eyes to gaze at the beautiful creatures that hover all over the beach and on the deep-sea waters. There are sights of beautiful birds that fly all over the dry shore land and over the seawaters. Their colored feathers brightened the sea with marvelous appearance at their illumination by the sun rays.
+
+There are varieties of birds that are in the vicinity. For instance, there are pelicans and seagulls. Pelicans are seen hovering over the sand singing sweet melodies that make the atmosphere at the beach vibrant. The seagulls are also observed to be flying over the seawaters in small groups. Some of the birds are gathered in groups spreading the wings that cloaked a soft shadow on the gentle water ripples."></TextView>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e73f66"
+        android:text="BOOK NOW!"></Button>
+</LinearLayout>
